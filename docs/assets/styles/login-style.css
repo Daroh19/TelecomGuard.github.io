@@ -32,6 +32,11 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
+.register-title {
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 /* Logo*/
 .logo-container {
     text-align: center;
@@ -52,12 +57,6 @@ body {
     align-items: center;
     margin: 0 auto 15px auto;
 
-}
-
-.register-title {
-    font-size: 24px;
-    color: var(--dark);
-    font-weight: 500;
 }
 
 
