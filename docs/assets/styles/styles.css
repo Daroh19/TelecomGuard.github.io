@@ -404,9 +404,7 @@ body {
     background-color: #3568d4;
 }
 
-/* ============================================
-   CAPTURAS DE PANTALLA
-   ============================================ */
+/*CAPTURAS DE PANTALLA */
 
 .screenshots {
     padding: 80px 60px;
@@ -464,7 +462,7 @@ body {
     filter: brightness(1);
 }
 
-/* =====================   CTA FINAL====================*/
+/* CTA FINAL*/
 
 .cta {
     background-color: var(--blue-white);
