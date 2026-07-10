@@ -1,0 +1,144 @@
+﻿:root {
+    --primary-blue: #8fd4f8;
+    --hover-blue: #6bc4f2;
+    --text-dark: #111111;
+    --link-blue: #23527c;
+    --bg-desktop: #f4f7f6;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-desktop);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.register-container {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo*/
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-logo img {
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+.user{
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+
+}
+
+.register-title {
+    font-size: 24px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: var(--text-dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--link-blue);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-blue);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--hover-blue);
+}
+
+
+.login-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.login-footer span {
+    color: var(--text-dark);
+}
+
+.login-footer .register-link {
+    color: var(--link-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer .register-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Mobile*/
+@media (max-width: 480px) {
+    body {
+        background-color: var(--white);
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .register-container {
+        box-shadow: none;
+        padding: 20px;
+        max-width: 100%;
+    }
+}

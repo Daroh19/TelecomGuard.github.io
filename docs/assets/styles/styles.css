@@ -1,6 +1,4 @@
-/* ============================================
-TELOCOMGUARD— ESTILOS GLOBALES
-============================================ */
+/*TELOCOMGUARD— ESTILOS GLOBALES*/
 
 *,
 *::before,
@@ -26,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--dark);
     overflow-x: hidden;
 }
@@ -85,9 +83,10 @@ body {
     font-weight: 600;
     font-family: inherit;
     transition:
-        background-color var(--transition),
-        transform var(--transition);
+            background-color var(--transition),
+            transform var(--transition);
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -303,8 +302,8 @@ body {
     text-align: center;
     border: 3px solid var(--blue);
     transition:
-        transform var(--transition),
-        box-shadow var(--transition);
+            transform var(--transition),
+            box-shadow var(--transition);
 }
 
 .pricing-card:hover {
@@ -567,7 +566,7 @@ body {
     transform: scale(1.15);
 }
 
-.footer-copy {
+.footer-text {
     text-align: center;
     margin-top: 12px;
     font-size: 0.8rem;
@@ -575,234 +574,110 @@ body {
 }
 
 
-/* ============================================
-   RESPONSIVE — TABLET (max 1024px)
-   ============================================ */
-
-@media (max-width: 1024px) {
-    .hero {
-        padding: 60px 40px;
-        gap: 30px;
-    }
-
-    .hero-img img {
-        max-width: 420px;
-    }
-
-    .pricing-card {
-        width: 260px;
-    }
-}
-
-/* ============================================
-   RESPONSIVE — MOBILE (max 768px)
-   ============================================ */
-
 @media (max-width: 768px) {
+    
+    .hero, .benefits, .testimonials, .pricing, .screenshots, .cta {
+        padding: 50px 20px;
+    }
 
-    /* Navbar */
+    /* NAVBAR Y MENÚ HAMBURGUESA  */
     .navbar {
-        padding: 12px 20px;
-        position: relative;
+        padding: 15px 20px;
     }
 
     .hamburger {
-        display: block;
+        display: block; /
     }
 
     .nav-container {
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--dark);
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 24px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        gap: 20px;
-        z-index: 99;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        padding: 20px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        gap: 15px;
     }
 
+    
     .nav-container.active {
         display: flex;
     }
 
     .nav_links ul {
         flex-direction: column;
-        gap: 16px;
+        text-align: center;
+        gap: 15px;
     }
 
-    .nav_links a {
-        font-size: 1.1rem;
-    }
-
-    .btn {
-        width: 100%;
+    .nav-container .btn {
+        width: 100%; 
         text-align: center;
     }
 
-    /* Hero */
+    /*  HERO (INICIO) */
     .hero {
-        flex-direction: column;
+        flex-direction: column; 
         text-align: center;
-        padding: 40px 24px 50px;
-        gap: 30px;
-    }
-
-    .hero-text {
-        max-width: 100%;
+        padding-top: 40px;
     }
 
     .hero-img img {
-        max-width: 100%;
-    }
-
-    /* Beneficios */
-    .benefits {
-        padding: 50px 24px;
-    }
-
-    .benefit-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .benefit-card {
         width: 100%;
-        max-width: 360px;
-        padding: 36px 28px;
+        max-width: 350px; /
     }
 
-    /* Testimonios */
-    .testimonials {
-        padding: 50px 24px;
-    }
-
-    .testimonials-row {
-        flex-direction: column;
-        gap: 36px;
-    }
-
+    /* 4. TESTIMONIOS  */
     .testimonial {
-        flex-direction: column;
+        flex-direction: column; 
         text-align: center;
-        max-width: 100%;
+        gap: 15px;
     }
 
     .testimonial img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
-    /* Pricing */
-    .pricing {
-        padding: 50px 24px;
-    }
-
-    .pricing-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 28px;
-    }
-
-    .pricing-card {
-        width: 100%;
-        max-width: 360px;
-    }
-
+    /* 5. PLANES DE PRECIO */
     .pricing-card.pro {
-        transform: scale(1);
-        order: -1;
+        transform: none;
     }
 
     .pricing-card.pro:hover {
         transform: translateY(-10px);
     }
 
-    /* Screenshots */
-    .screenshots {
-        padding: 50px 24px;
-    }
-
+    /* 6. CAPTURAS DE PANTALLA */
     .gallery-container {
         flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .screenshot.side,
-    .screenshot.center {
-        width: 85%;
-        height: auto;
-        transform: none !important;
-        filter: brightness(1) !important;
-        margin: 0 !important;
-        z-index: 1;
-    }
-
-    .gallery-container .screenshot:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-    }
-
-    /* Equipo */
-    .team {
-        padding: 50px 24px;
-    }
-
-    .team-container {
         gap: 30px;
     }
 
-    .member img {
-        width: 130px;
-        height: 130px;
+    .screenshot.side, .screenshot.center {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        transform: none; 
+        filter: brightness(1); /* Devolvemos el color natural */
+        
     }
 
-    /* CTA */
-    .cta {
-        padding: 60px 24px;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 20px 24px 12px;
-    }
-
+    /* --- 7. FOOTER --- */
     .footer-top {
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: column; 
+        gap: 25px;
         text-align: center;
     }
 
-    .footer-social img {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* ============================================
-   RESPONSIVE — SMALL MOBILE (max 400px)
-   ============================================ */
-
-@media (max-width: 400px) {
-
-    .hero-text h1 {
-        font-size: 1.5rem;
+    .footer-links {
+        align-items: center;
     }
 
-    .benefit-card {
-        padding: 28px 20px;
-    }
-
-    .pricing-card {
-        padding: 28px 20px;
-    }
-
-    .member img {
-        width: 110px;
-        height: 110px;
+    .footer-social {
+        justify-content: center;
     }
 }

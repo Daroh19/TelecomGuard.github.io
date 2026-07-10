@@ -1,208 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>TelecomGuard</title>
+    <title>TelecomGuard</title>
 
-        <link rel="stylesheet" href="assets/styles/styles.css" />
-    </head>
-    <body>
-        <!-- Navbar -->
-        <header class="navbar">
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+   <a href="#home">
+        <img
+            src="assets/images/logo.png"
+            class="logo"
+            alt="TelecomGuard-Logo" />
+        </a>
+    <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menú"> ☰
+    </button>
+    <div
+            class="nav-container"
+            id="nav-container">
+        <nav class="nav_links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#planes">Planes</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="btn">Iniciar Sesion</a>
+        <a href="register.html" class="btn">Registrarse</a>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>“Anticipa fallas. Mantén tu red siempre activa.”</h1>
+        <p>
+            Centraliza la información, genera alertas automáticas y ayuda a tu equipo a tomar decisiones rápidas,
+            reduciendo interrupciones y garantizando la continuidad del servicio.
+        </p>
+    </div>
+    <div class="hero-img">
+        <img
+                src="assets/images/ingenieria.jpg"
+                alt="Ingenieria monitoreando" />
+    </div>
+</section>
+
+<!-- Beneficios -->
+<section class="benefits" id="beneficios">
+    <h2 class="benefits-title">Beneficios Clave</h2>
+    <div class="benefit-cards">
+        <div class="benefit-card">
             <img
-                src="assets/images/logo.png"
-                class="logo"
-                alt="TelecomGuard Logo" />
-            <button
-                class="hamburger"
-                id="hamburger"
-                aria-label="Abrir menú">
-                ☰
-            </button>
-            <div
-                class="nav-container"
-                id="nav-container">
-                <nav class="nav_links">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#beneficios">Beneficios</a></li>
-                        <li><a href="#testimonios">Testimonios</a></li>
-                        <li><a href="#planes">Planes</a></li>
-                    </ul>
-                </nav>
-                <button class="btn">Empezar</button>
-            </div>
-        </header>
+                    src="assets/images/deteccion.png"
+                    alt="Precisión en el Monitoreo Clínico" />
+            <h3>Identifica problemas antes de que afecten
+                a los usuarios gracias al monitoreo continuo
+                y análisis inteligente.</h3>
+        </div>
+        <div class="benefit-card">
+            <img
+                    src="assets/images/monitoreo.png"
+                    alt="Monitoreo en tiempo real" />
+            <h3>Visualiza el estado completo de tu red en un solo dashboard,
+                con métricas claras y actualizadas al instante.</h3>
+        </div>
+        <div class="benefit-card">
+            <img
+                    src="assets/images/alertas.png"
+                    alt="Alertas automáticas" />
+            <h3>Recibe notificaciones inmediatas ante incidentes críticos,
+                reduciendo el tiempo de reacción del equipo.</h3>
+        </div>
+    </div>
+</section>
 
-        <!-- Hero -->
-         <section
-                class="hero"
-                id="home">
-            <div class="hero-text">
-                <h1>“Anticipa fallas. Mantén tu red siempre activa.”</h1>
-                <p>
-                    Centraliza la información, genera alertas automáticas y ayuda a tu equipo a tomar decisiones rápidas, 
-                    reduciendo interrupciones y garantizando la continuidad del servicio.
-                </p>
+<!-- Testimonios -->
+<section class="testimonials" id="testimonios">
+    <h2 class="testimonials-title">Testimonios</h2>
+    <div class="testimonials-row">
+        <div class="testimonial">
+            <img
+                    src="assets/images/enrique.png"
+                    alt="Enriquez Gomez" />
+            <div class="testimonial-text">
+                <h3>Enrique Gomez</h3>
+                <p>Antes de usar TelecomGuard, nos enterábamos de los problemas cuando los usuarios ya estaban afectados. Ahora recibimos alertas anticipadas
+                    y podemos actuar antes de que ocurra una caída. </p>
             </div>
-            <div class="hero-img">
-                <img src="assets/images/ingenieria.jpg" alt="Ingenieria monitoreando" />
-             </div>
-         </section>
-
-         <!-- Beneficios -->
-        <section
-            class="benefits"
-            id="beneficios">
-            <h2 class="benefits-title">Beneficios Clave</h2>
-            <div class="benefit-cards">
-                <div class="benefit-card">
-                    <img
-                        src="assets/images/deteccion.png"
-                        alt="Precisión en el Monitoreo Clínico" />
-                    <h3>Identifica problemas antes de que afecten 
-                        a los usuarios gracias al monitoreo continuo 
-                        y análisis inteligente.</h3>
-                </div>
-                <div class="benefit-card">
-                    <img
-                        src="assets/images/monitoreo.png"
-                        alt="Monitoreo en tiempo real" />
-                    <h3>Visualiza el estado completo de tu red en un solo dashboard, 
-                        con métricas claras y actualizadas al instante.</h3>
-                </div>
-                <div class="benefit-card">
-                    <img
-                        src="assets/images/alertas.png"
-                        alt="Alertas automáticas" />
-                    <h3>Recibe notificaciones inmediatas ante incidentes críticos,
-                         reduciendo el tiempo de reacción del equipo.</h3>
-                </div>
+        </div>
+        <div class="testimonial">
+            <img
+                    src="assets/images/juan.png"
+                    alt="Juan Perez" />
+            <div class="testimonial-text">
+                <h3>Juan Perez</h3>
+                <p>TelecomGuard nos dio visibilidad completa de nuestra infraestructura en un solo dashboard. Pasamos de reaccionar a los incidentes a prevenirlos,
+                    lo que mejoró la continuidad del servicio.</p>
             </div>
-        </section>
-
-        <!-- Testimonios -->
-        <section
-            class="testimonials"
-            id="testimonios">
-            <h2 class="testimonials-title">Testimonios</h2>
-            <div class="testimonials-row">
-                <div class="testimonial">
-                    <img
-                        src="assets/images/enrique.png"
-                        alt="Enriquez Gomez" />
-                    <div class="testimonial-text">
-                        <h3>Enrique Gomez</h3>
-                        <p>Antes de usar TelecomGuard, nos enterábamos de los problemas cuando los usuarios ya estaban afectados. Ahora recibimos alertas anticipadas
-                             y podemos actuar antes de que ocurra una caída. </p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <img
-                        src="assets/images/juan.png"
-                        alt="Juan Perez" />
-                    <div class="testimonial-text">
-                        <h3>Juan Perez</h3>
-                        <p>TelecomGuard nos dio visibilidad completa de nuestra infraestructura en un solo dashboard. Pasamos de reaccionar a los incidentes a prevenirlos,
-                            lo que mejoró la continuidad del servicio.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 <!-- Planes y Precios -->
-        <section
-            class="pricing"
-            id="planes">
-            <h2 class="pricing-title">Precios y Planes</h2>
-            <div class="pricing-cards">
-                <div class="pricing-card basic">
-                    <h3>Básico</h3>
-                    <div class="plan-price">S/19.00</div>
-                    <p class="plan-period">Precio Mensual</p>
-                    <h4>Funciones</h4>
-                    <ul>
-                        <li>Monitoreo en tiempo real (limitado)</li>
-                        <li>Hasta 10 dispositivos</li>
-                        <li>Alertas estandar</li>
-                        <li> Soporte por correo</li>
+<section class="pricing"
+        id="planes">
+    <h2 class="pricing-title">Precios y Planes</h2>
+    <div class="pricing-cards">
+        <div class="pricing-card basic">
+            <h3>Básico</h3>
+            <div class="plan-price">S/19.00</div>
+            <p class="plan-period">Precio Mensual</p>
+            <h4>Funciones</h4>
+            <ul>
+                <li>Monitoreo en tiempo real (limitado)</li>
+                <li>Hasta 10 dispositivos</li>
+                <li>Alertas estándar</li>
+                <li> Soporte por correo</li>
 
-                    </ul>
-                    <button>Seleccionar</button>
-                </div>
+            </ul>
+            <button>Seleccionar</button>
+        </div>
 
-                <div class="pricing-card pro">
-                    <h3>Pro</h3>
-                    <div class="plan-price">S/49.00</div>
-                    <p class="plan-period">Precio Mensual</p>
-                    <h4>Funciones</h4>
-                    <ul>
-                        <li>Monitoreo en tiempo real completo</li>
-                        <li>Hasta 50 dispositivos</li>
-                        <li>Alertas automáticas avanzadas</li>
-                    </ul>
-                    <button>Seleccionar</button>
-                </div>
+        <div class="pricing-card pro">
+            <h3>Pro</h3>
+            <div class="plan-price">S/49.00</div>
+            <p class="plan-period">Precio Mensual</p>
+            <h4>Funciones</h4>
+            <ul>
+                <li>Monitoreo en tiempo real completo</li>
+                <li>Hasta 50 dispositivos</li>
+                <li>Alertas automáticas avanzadas</li>
+            </ul>
+            <button>Seleccionar</button>
+        </div>
 
-                <div class="pricing-card enterprise">
-                    <h3>Enterprise</h3>
-                    <div class="plan-price">S/100.00</div>
-                    <p class="plan-period">Precio Mensual</p>
-                    <h4>Funciones</h4>
-                    <ul>
-                        <li>Monitoreo ilimitado de dispositivos</li>
-                        <li>Alertas predictivas con IA</li>
-                        <li>Correlación automática de eventos</li>
-                    </ul>
-                    <button>Seleccionar</button>
-                </div>
-            </div>
-        </section>
+        <div class="pricing-card enterprise">
+            <h3>Enterprise</h3>
+            <div class="plan-price">S/100.00</div>
+            <p class="plan-period">Precio Mensual</p>
+            <h4>Funciones</h4>
+            <ul>
+                <li>Monitoreo ilimitado de dispositivos</li>
+                <li>Alertas predictivas con IA</li>
+                <li>Correlación automática de eventos</li>
+            </ul>
+            <button>Seleccionar</button>
+        </div>
+    </div>
+</section>
 
-        <!-- Capturas de Pantalla -->
-        <section class="screenshots">
-            <h2 class="screenshots-title">Capturas de Pantalla</h2>
-            <div class="gallery-container">
-                <img src="assets/images/captura1.jpg" alt="Pantalla izquierda" class="screenshot side">
-                <img src="assets/images/captura2.jpg" alt="Pantalla central" class="screenshot center">
-                <img src="assets/images/captura3.jpg" alt="Pantalla derecha" class="screenshot side">
-            </div>
-        </section>
+<!-- Capturas de Pantalla -->
+<section class="screenshots">
+    <h2 class="screenshots-title">Capturas de Pantalla</h2>
+    <div class="gallery-container">
+        <img src="assets/images/captura1.jpg" alt="Pantalla izquierda" class="screenshot side">
+        <img src="assets/images/captura2.jpg" alt="Pantalla central" class="screenshot center">
+        <img src="assets/images/captura3.jpg" alt="Pantalla derecha" class="screenshot side">
+    </div>
+</section>
 
-        
 
-         <!-- CTA Final -->
-        <section class="cta">
-        <h2 class="cta-title">Mantén tu red siempre activa con TelecomGuard</h2>
-        <p class="cta-subtitle">
-            Detecta fallas antes de que ocurran y
-             toma el control de tu infraestructura en tiempo real.
-        </p>
-        <p>“Empieza hoy a monitorear de forma inteligente”</p>
-        <button class="cta-btn">Empieza hoy</button>
-        </section>
 
-        <!--Footer-->
-            <footer class="footer">
-            <div class="footer-top">
-                <div class="footer-links">
-                    <a href="#">Políticas de Privacidad</a>
-                    <a href="#">Políticas de Cookies</a>
-                    <a href="#">Políticas de Calidad</a>
-                </div>
-                <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="TelecomGuard Logo">
-                </div>
-                <div class="footer-social">
-                    <img src="assets/images/face.webp" alt="Facebook">
-                    <img src="assets/images/instlogo.webp" alt="Instagram">
-                    <img src="assets/images/X-Logo-500x281.webp" alt="X">
-                </div>
-            </div>
-            <p class="footer-copy">© 2026 TelecomGuard. Todos los derechos reservados</p>
-        </footer>
+<!-- CTA Final -->
+<section class="cta">
+    <h2 class="cta-title">Mantén tu red siempre activa con TelecomGuard</h2>
+    <p class="cta-subtitle">
+        Detecta fallas antes de que ocurran y
+        toma el control de tu infraestructura en tiempo real.
+    </p>
+    <p>“Empieza hoy a monitorear de forma inteligente”</p>
+    <button class="cta-btn">Empieza hoy</button>
+</section>
 
-    </body>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Políticas de Cookies</a>
+            <a href="#">Políticas de Calidad</a>
+        </div>
+        <div class="footer-logo">
+            <a href="#home">
+                <img src="assets/images/logo.png" alt="TelecomGuard Logo">
+            </a>
+        </div>
+        <div class="footer-social">
+            <img src="assets/images/face.webp" alt="Facebook">
+            <img src="assets/images/instlogo.webp" alt="Instagram">
+            <img src="assets/images/X-Logo-500x281.webp" alt="X">
+        </div>
+    </div>
+    <p class="footer-copy">© 2026 TelecomGuard. Todos los derechos reservados</p>
+</footer>
+<script src="assets/scripts/despliegue.js"></script>
+</body>
 </html>

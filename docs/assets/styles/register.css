@@ -1,0 +1,108 @@
+﻿
+:root {
+    --primary-blue: #8fd4f8;
+    --hover-blue: #6bc4f2;
+    --text-dark: #111111;
+    --bg-page: #f0f4f8;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.register-container {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-height: 80px;
+}
+
+.register-title {
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #23527c;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-blue);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: var(--hover-blue);
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: var(--white);
+        align-items: flex-start;
+    }
+
+    .register-container {
+        box-shadow: none;
+        padding: 20px;
+        border-radius: 0;
+    }
+}
