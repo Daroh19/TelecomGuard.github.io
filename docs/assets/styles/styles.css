@@ -108,7 +108,7 @@ body {
 
 
 
-/* ==========HERO================================ */
+/* HERO */
 
 .hero {
     display: flex;
@@ -125,7 +125,7 @@ body {
 }
 
 .hero-text h1 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.8rem, 3.5vw, 3rem);
     line-height: 1.2;
     margin-bottom: 20px;
@@ -180,7 +180,7 @@ body {
 }
 
 .benefits-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     margin-bottom: 50px;
     color: var(--dark);
@@ -280,7 +280,7 @@ body {
 }
 
 .pricing-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     margin-bottom: 60px;
     color: var(--dark);
@@ -323,7 +323,7 @@ body {
 }
 
 .pricing-card h3 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 4px;
@@ -412,7 +412,7 @@ body {
 }
 
 .screenshots-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     margin-bottom: 50px;
     color: var(--dark);
@@ -472,7 +472,7 @@ body {
 }
 
 .cta-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     margin-bottom: 16px;
     color: #000000;
@@ -571,7 +571,7 @@ body {
     color: var(--dark);
 }
 
-
+/* Responsive Mobile*/
 @media (max-width: 768px) {
     
     .hero, .benefits, .testimonials, .pricing, .screenshots, .cta {
@@ -659,8 +659,7 @@ body {
         width: 100%;
         max-width: 300px;
         height: auto;
-        transform: none; 
-        filter: brightness(1); /* Devolvemos el color natural */
+        transform: none;
         
     }
 

@@ -1,9 +1,9 @@
 ﻿:root {
-    --primary-blue: #8fd4f8;
-    --hover-blue: #6bc4f2;
-    --text-dark: #111111;
-    --link-blue: #23527c;
-    --bg-desktop: #f4f7f6;
+   
+   --blue-white: #8DD9FB;
+    --dark: #000000;
+    --blue: #1F77B4;
+    --bg-gray: #f4f7f6;
     --white: #ffffff;
 }
 
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--bg-desktop);
+    background-color: var(--bg-gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,6 @@ body {
 .user{
     width: 100px;
     height: 100px;
-    background-color: var(--primary-blue);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -57,7 +56,7 @@ body {
 
 .register-title {
     font-size: 24px;
-    color: var(--text-dark);
+    color: var(--dark);
     font-weight: 500;
 }
 
@@ -70,13 +69,13 @@ body {
     display: block;
     margin-bottom: 8px;
     font-size: 15px;
-    color: var(--text-dark);
+    color: var(--dark);
 }
 
 .form-control {
     width: 100%;
     padding: 14px;
-    border: 2px solid var(--primary-blue);
+    border: 2px solid var(--blue-white);
     border-radius: 8px;
     font-size: 16px;
     outline: none;
@@ -84,14 +83,14 @@ body {
 }
 
 .form-control:focus {
-    border-color: var(--link-blue);
+    border-color: var(--blue);
 }
 
 .btn-login {
     width: 100%;
     padding: 15px;
-    background-color: var(--primary-blue);
-    color: var(--text-dark);
+    background-color: var(--blue-white);
+    color: var(--dark);
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -102,7 +101,7 @@ body {
 }
 
 .btn-login:hover {
-    background-color: var(--hover-blue);
+    background-color: var(--blue-white);
 }
 
 
@@ -115,11 +114,11 @@ body {
 }
 
 .login-footer span {
-    color: var(--text-dark);
+    color: var(--dark);
 }
 
 .login-footer .register-link {
-    color: var(--link-blue);
+    color: var(--blue);
     font-weight: 600;
     text-decoration: none;
 }
@@ -128,8 +127,8 @@ body {
     text-decoration: underline;
 }
 
-/* --- Responsive Mobile*/
-@media (max-width: 480px) {
+/* Responsive Mobile*/
+@media (max-width: 768px) {
     body {
         background-color: var(--white);
         align-items: flex-start;

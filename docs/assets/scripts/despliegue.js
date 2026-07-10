@@ -2,7 +2,6 @@
     const hamburger = document.getElementById('hamburger');
     const navContainer = document.getElementById('nav-container');
 
-    // Comprobamos si JavaScript encuentra los elementos
     console.log("Botón hamburguesa:", hamburger);
     console.log("Contenedor del menú:", navContainer);
 
